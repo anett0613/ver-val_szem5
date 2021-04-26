@@ -1,0 +1,1 @@
+# ver-val_szem5
