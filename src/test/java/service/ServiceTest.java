@@ -39,10 +39,24 @@ class ServiceTest {
 
     @Test
     void findAllStudents() {
+        Iterable<Student> studentItarable = serviceBefore.findAllStudents();
+        int counter = 0;
+        for (Object i : studentItarable) {
+            counter++;
+        }
+
+        assertNotEquals(0,counter);
     }
 
     @Test
     void findAllHomework() {
+        Iterable<Homework> homeworkItarable = serviceBefore.findAllHomework();
+        int counter = 0;
+        for (Object i : homeworkItarable) {
+            counter++;
+        }
+
+        assertNotEquals(0,counter);
     }
 
     @Test

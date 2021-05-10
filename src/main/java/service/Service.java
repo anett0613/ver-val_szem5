@@ -18,7 +18,10 @@ public class Service {
         this.gradeXmlRepo = gradeXmlRepo;
     }
 
-    public Iterable<Student> findAllStudents() { return studentXmlRepo.findAll(); }
+    public Iterable<Student> findAllStudents() {
+
+        return studentXmlRepo.findAll();
+    }
 
     public Iterable<Homework> findAllHomework() { return homeworkXmlRepo.findAll(); }
 
